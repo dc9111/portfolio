@@ -1,0 +1,24 @@
+.navigation {
+
+    background-color: aqua;
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    place-self: right;
+
+    
+    &__list {
+        display: grid;
+        position: relative;
+        list-style: none;
+        align-items: end;
+        //display: flex;
+        grid-template-columns: 1fr min-content min-content;
+        text-align: right;
+        padding: 0.5rem;
+
+        &-item {
+            text-align: right;
+            padding: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.projects {
+    background-color: blueviolet;
+    grid-column: 2 / 8;
+    //max-width: 1080px;
+    
+    margin: 10rem 5rem;
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+
+}
+
+.project-box {
+
+    background-color: darkgoldenrod;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+    margin: 1rem;
+    
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__text {
+
+    }
+    
+}

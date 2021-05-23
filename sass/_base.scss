@@ -1,0 +1,59 @@
+$color-primary: rgb(87, 97, 187);
+$color-primary-light: rgb(171, 179, 245);
+$color-primary-dark: rgb(17, 27, 117);
+
+$color-secondary: rgb(199, 15, 15);
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-grey-dark-1: #52514f;
+$color-grey-dark-2: #3b3a38;
+
+$font-primary: "Lato", sans-serif;
+$font-display: 'Josefin Sans';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark-1;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content 90vh repeat(8, min-content);
+    grid-template-columns: repeat(8, 1fr);
+    //justify-content: center;
+
+}
+
+%heading {
+    font-family: $font-display;
+    font-weight: 800;
+}
+.heading-primary {
+    @extend %heading;
+    
+}
+
+.heading-secondary {
+    @extend %heading;
+}
+
+.heading-tertiary {
+    @extend %heading;
+    font-size: 1.9rem;
+}
